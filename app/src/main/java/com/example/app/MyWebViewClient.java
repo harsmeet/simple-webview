@@ -6,16 +6,15 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 public class MyWebViewClient extends WebViewClient {
-
-    @Override
-    public boolean shouldOverrideUrlLoading(WebView view, String url) {
-//        Add HTML page link Here :
-        if (Uri.parse(url).getHost().endsWith("file:///android_asset/login.html")) {
-            return false;
-        }
-
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-        view.getContext().startActivity(intent);
-        return true;
-    }
+//
+//    @Override
+//    public boolean shouldOverrideUrlLoading(WebView view, String url) {
+//        if (Uri.parse(url).getHost().endsWith("")) {
+//            return false;
+//        }
+//
+//        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+//        view.getContext().startActivity(intent);
+//        return true;
+//    }
 }
