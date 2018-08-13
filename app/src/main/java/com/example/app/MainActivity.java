@@ -2,8 +2,6 @@ package com.example.app;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -34,7 +32,7 @@ public class MainActivity extends Activity {
          mWebView.loadUrl("file:///android_asset/index.html");
     }
 
-    // Prevent the back-button from closing the app
+    // Prevent the back-button from closing the app  ....
     @Override
     public void onBackPressed() {
         if(mWebView.canGoBack()) {
