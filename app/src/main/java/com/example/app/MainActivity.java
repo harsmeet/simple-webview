@@ -25,17 +25,17 @@ public class MainActivity extends Activity {
         webSettings.setJavaScriptEnabled(true);
 
         // REMOTE RESOURCE
-         mWebView.loadUrl("http://example.com");
-         mWebView.setWebViewClient(new MyWebViewClient());
+        mWebView.loadUrl("http://example.com");
+        mWebView.setWebViewClient(new MyWebViewClient());
 
         // LOCAL RESOURCE
-         mWebView.loadUrl("file:///android_asset/login.html");
+        mWebView.loadUrl("file:///android_asset/login.html");
     }
 
     // Prevent the back-button from closing the app  ....
     @Override
     public void onBackPressed() {
-        if(mWebView.canGoBack()) {
+        if (mWebView.canGoBack()) {
             mWebView.goBack();
         } else {
             super.onBackPressed();

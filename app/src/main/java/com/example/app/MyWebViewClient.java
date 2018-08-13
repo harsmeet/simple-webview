@@ -9,6 +9,7 @@ public class MyWebViewClient extends WebViewClient {
 
     @Override
     public boolean shouldOverrideUrlLoading(WebView view, String url) {
+//        Add HTML page link Here :
         if (Uri.parse(url).getHost().endsWith("file:///android_asset/login.html")) {
             return false;
         }
